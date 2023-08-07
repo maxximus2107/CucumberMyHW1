@@ -1,0 +1,81 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-07-23T18:38:21.120Z",
+        "line": 3,
+        "name": "User should be able to login with valid credentials",
+        "description": "",
+        "id": "techfios-billing-login-page-functionality-validation;user-should-be-able-to-login-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1985800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the techfios login page",
+            "match": {
+              "location": "steps.LoginStepDefinition.user_is_on_the_techfios_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2012400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enters username as \"demo@techfios.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"demo@techfios.com\"",
+                  "offset": 24
+                }
+              ],
+              "location": "steps.LoginStepDefinition.user_enters_username_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "User enters password as \"abc123\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "User clicks on sign in button",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "User should land on dashboard page",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Techfios billing login page functionality validation",
+    "description": "",
+    "id": "techfios-billing-login-page-functionality-validation",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/TechFiosLogin.feature",
+    "tags": []
+  }
+]

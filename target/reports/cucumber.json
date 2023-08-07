@@ -1,0 +1,285 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1648271300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on the techfios login page",
+            "match": {
+              "location": "steps.LoginStepDefinition.user_is_on_the_techfios_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-08-07T07:28:23.347Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1826116000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.LoginStepDefinition.setup()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "User should be able to login with valid credentials and open new account",
+        "description": "",
+        "id": "techfios-billing-login-page-functionality-validation;user-should-be-able-to-login-with-valid-credentials-and-open-new-account;;2",
+        "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools\n  (failed to check if window was closed: disconnected: not connected to DevTools)\n  (Session info: chrome\u003d115.0.5790.111)\nBuild info: version: \u00273.14.0\u0027, revision: \u0027aacccce0\u0027, time: \u00272018-08-02T20:19:58.91Z\u0027\nSystem info: host: \u0027LAPTOP-AN3CCRSP\u0027, ip: \u0027192.168.1.242\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.18\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.111, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\\Users\\M\\AppData\\Local\\Te...}, goog:chromeOptions: {debuggerAddress: localhost:52815}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 747ee0077b59af8443cd25198830b81d\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:438)\r\n\tat steps.LoginStepDefinition.tearDown(LoginStepDefinition.java:105)\r\n",
+              "duration": 43005100,
+              "status": "failed"
+            },
+            "match": {
+              "location": "steps.LoginStepDefinition.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:559)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy19.sendKeys(Unknown Source)\r\n\tat pages.LoginPage.enterUserName(LoginPage.java:28)\r\n\tat steps.LoginStepDefinition.user_enters_the_in_the_field(LoginStepDefinition.java:41)\r\n\tat ✽.User enters the \"demo@techfios.com\" in the \"username\" field(file:///C:/Users/M/Selenium_0/Cucumber/src/test/resources/features/AddNewAccountDefinition.feature:9)\r\n",
+              "duration": 6923203500,
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "User enters the \"demo@techfios.com\" in the \"username\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"demo@techfios.com\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"username\"",
+                  "offset": 43
+                }
+              ],
+              "location": "steps.LoginStepDefinition.user_enters_the_in_the_field(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 997800,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User enters the \"abc123\" in the \"password\" field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"abc123\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 32
+                }
+              ],
+              "location": "steps.LoginStepDefinition.user_enters_the_in_the_field(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 999300,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "User clicks on \"login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"login\"",
+                  "offset": 15
+                }
+              ],
+              "location": "steps.LoginStepDefinition.user_clicks_on(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "User should land on dashboard page",
+            "match": {
+              "location": "steps.LoginStepDefinition.user_should_land_on_dashboard_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1002100,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "User clicks on \"bankCash\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"bankCash\"",
+                  "offset": 15
+                }
+              ],
+              "location": "steps.LoginStepDefinition.user_clicks_on(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 999700,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "User clicks on \"newAccount\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"newAccount\"",
+                  "offset": 15
+                }
+              ],
+              "location": "steps.LoginStepDefinition.user_clicks_on(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "User enters \"\" in the \"accountTitle\" field in accounts page",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "User enters \"\" in the \"description\" field in accounts page",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 17,
+            "name": "User enters \"\" in the \"initialBalance\" field in accounts page",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 18,
+            "name": "User enters \"\" in the \"accountNumber\" field in accounts page",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 19,
+            "name": "User enters \"\" in the \"contactPerson\" field in accounts page",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 20,
+            "name": "User enters \"\" in the \"Phone\" field in accounts page",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "User enters \"\" in the \"internetBankingURL\" field in accounts page",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000200,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "User clicks on \"submit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"submit\"",
+                  "offset": 15
+                }
+              ],
+              "location": "steps.LoginStepDefinition.user_clicks_on(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 23,
+            "name": "User should be able to validate account created successfully",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BankCashFeature"
+          },
+          {
+            "name": "@BankAndCashScenario"
+          }
+        ]
+      }
+    ],
+    "name": "Techfios billing login page functionality validation",
+    "description": "",
+    "id": "techfios-billing-login-page-functionality-validation",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/AddNewAccountDefinition.feature",
+    "tags": [
+      {
+        "name": "@BankCashFeature",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
